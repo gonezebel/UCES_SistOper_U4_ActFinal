@@ -1,0 +1,27 @@
+# Entorno local
+.venv/
+.vev/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Material de consigna y bibliografia no publicable
+00_Bibliografía/
+00_Bibliografia/
+01_Consigna/
+
+# Archivos temporales y de sistema
+.env
+.DS_Store
+Thumbs.db
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Extracciones locales de PDFs
+.extraccion_texto/
+
+# Logs locales del servidor Flask
+flask_stdout.log
+flask_stderr.log
