@@ -212,9 +212,9 @@ PAGE = """
     .cpu-chip {
       position: absolute;
       left: 50%;
-      top: 47%;
-      width: 150px;
-      height: 150px;
+      top: 50%;
+      width: 132px;
+      height: 132px;
       transform: translate(-50%, -50%);
       display: grid;
       place-items: center;
@@ -236,7 +236,7 @@ PAGE = """
     }
 
     .cpu-chip::after {
-      inset: -34px;
+      inset: -28px;
       animation-delay: .5s;
     }
 
@@ -247,16 +247,16 @@ PAGE = """
 
     .node {
       position: absolute;
-      width: 230px;
-      height: 118px;
-      padding: 16px 18px;
+      width: min(210px, 32%);
+      height: 96px;
+      padding: 12px 14px;
       display: grid;
       place-content: center;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: white;
       box-shadow: 0 10px 30px rgba(24,32,34,.1);
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.25;
       font-weight: 800;
       text-align: center;
@@ -271,10 +271,10 @@ PAGE = """
       overflow-wrap: anywhere;
     }
 
-    .n1 { left: 34px; top: 54px; }
-    .n2 { right: 34px; top: 54px; }
-    .n3 { left: 34px; bottom: 54px; }
-    .n4 { right: 34px; bottom: 54px; }
+    .n1 { left: 7%; top: 50px; }
+    .n2 { right: 7%; top: 50px; }
+    .n3 { left: 7%; bottom: 50px; }
+    .n4 { right: 7%; bottom: 50px; }
 
     .signal {
       position: absolute;
@@ -721,6 +721,16 @@ PAGE = """
       }
       .hero { min-height: auto; }
       .studio-board { min-height: 430px; }
+      .node {
+        width: min(190px, 34%);
+        height: 88px;
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+      .cpu-chip {
+        width: 118px;
+        height: 118px;
+      }
       .card,
       .third { grid-column: span 12; }
       .control-grid,
@@ -741,12 +751,12 @@ PAGE = """
       .network-map { grid-template-columns: 1fr; }
       .studio-board { min-height: 360px; }
       .node {
-        width: 142px;
-        height: 86px;
+        width: 39%;
+        height: 78px;
         padding: 10px 8px;
         font-size: 12px;
       }
-      .cpu-chip { width: 118px; height: 118px; }
+      .cpu-chip { width: 104px; height: 104px; }
       .lock-line { grid-template-columns: 1fr; }
       .memory-wall { grid-template-columns: repeat(4, 1fr); }
       .identity-grid { grid-template-columns: 1fr; }
