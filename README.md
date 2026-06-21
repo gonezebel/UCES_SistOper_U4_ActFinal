@@ -1,6 +1,6 @@
 # Studio Design 3D - Sala de Crisis IT
 
-Web interactiva en Python/Flask para la Actividad Integradora Final de Sistemas Operativos.
+Web interactiva en Python/Flask para presentar una propuesta de arquitectura IT al directorio de Studio Design 3D.
 
 La propuesta simula el rol de gerente IT de un estudio de arquitectura y animacion, explicando con escenarios practicos:
 
@@ -35,4 +35,4 @@ Variable opcional:
 
 ## Nota de privacidad
 
-`.gitignore` excluye las carpetas `00_Bibliografía/`, `01_Consigna/` y `.venv/` para no publicar PDFs ni entorno local.
+`.gitignore` excluye carpetas de materiales privados y `.venv/` para no publicar PDFs ni entorno local.
